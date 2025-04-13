@@ -45,4 +45,20 @@ public class Controller {
 	public void setCurrent2(String current) {
 		m.setCurrent2(current);
 	}
+	
+	public int getCirkelBounds() {
+		return m.getCirkelBounds();
+	}
+	
+	public void setCirkelBounds(int current) {
+		m.setCirkelBounds(current);
+	}
+	
+	public int getCirkelBoundsY() {
+		return m.getCirkelBoundsY();
+	}
+	
+	public void setCirkelBoundsY(int current) {
+		m.setCirkelBoundsY(current);
+	}
 }

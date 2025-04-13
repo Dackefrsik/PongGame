@@ -9,6 +9,9 @@ public class Model {
 	int boundsY1 = 100;
 	int boundsY2 = 100;
 	
+	int cirkelBounds;
+	int cirkelBoundsY;
+	
 	public int getBoundsY1() {
 		return boundsY1;
 	}
@@ -17,7 +20,7 @@ public class Model {
 		if(Current1 == "Up") {
 			boundsY1 -= Y;                                                                                        
 		}
-		else {
+		else if(Current1 == "Down"){
 			boundsY1 += Y;
 		}
 
@@ -29,10 +32,10 @@ public class Model {
 	
 	public void setBoundsY2(int Y) {
 		if(Current2 == "Up") {
-	   		boundsY2 += Y;   
+	   		boundsY2 -= Y;   
 		}
-		else {
-			boundsY2 -= Y;
+		else if(Current2 == "Down"){
+			boundsY2 += Y;
 		}
 
 	}
@@ -51,5 +54,21 @@ public class Model {
 	
 	public void setCurrent2(String Current) {
 		Current2 = Current;
+	}
+	
+	public void setCirkelBounds(int Current) {
+		cirkelBounds = Current;
+	}
+	
+	public int getCirkelBounds() {
+		return cirkelBounds;
+	}
+	
+	public void setCirkelBoundsY(int Current) {
+		cirkelBoundsY = Current;
+	}
+	
+	public int getCirkelBoundsY() {
+		return cirkelBoundsY;
 	}
 }
