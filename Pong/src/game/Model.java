@@ -9,8 +9,8 @@ public class Model {
 	int boundsY1 = 100;
 	int boundsY2 = 100;
 	
-	int cirkelBounds;
-	int cirkelBoundsY;
+	int cirkelBounds = 150;
+	int cirkelBoundsY = 150;
 	
 	public int getBoundsY1() {
 		return boundsY1;
