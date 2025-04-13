@@ -119,8 +119,6 @@ public class View {
 						move = "LeftRightUp";
 					}
 					else if(Cirkel.getY() == 0 && move.equals("RightLeftUp")) {
-						/*C.setCirkelBounds(Cirkel.getBounds().x - 10);
-						C.setCirkelBoundsY(Cirkel.getBounds().y - 5);*/
 						System.out.println("TopRightLeftUp");
 						move = "RightLeftDown";
 					}
@@ -133,8 +131,6 @@ public class View {
 					}
 				}
 				
-				 
-				
 				//Går från höger uppe till vänster nere
 				else if(Cirkel.getBounds().x <= (P.getWidth() - Cirkel.getBounds().width) && Cirkel.getBounds().y <= (P.getHeight() - 25) && move.equals("RightLeftDown")) {
 					
@@ -143,11 +139,8 @@ public class View {
 						move = "LeftRightDown";
 					}
 					else if((Cirkel.getY() + Cirkel.getHeight()) >= P.getHeight() && move.equals("RightLeftDown")) {
-						/*C.setCirkelBounds(Cirkel.getBounds().x - 10);
-						C.setCirkelBoundsY(Cirkel.getBounds().y + 5);*/
 					    System.out.println("BottenRightLeftDown");                                                                                                                                                        
 						move = "RightLeftUp";
-						//this.cancel();
 					}
 					else if(Cirkel.getBounds().x > 0){
 						C.setCirkelBounds(Cirkel.getBounds().x - 10);
@@ -168,8 +161,6 @@ public class View {
 					}
 					//Höger upp till vänster ner
 					else if((Cirkel.getY() + Cirkel.getHeight()) >= P.getHeight() && move.equals("LeftRightDown")) {
-						/*C.setCirkelBounds(Cirkel.getBounds().x + 10);
-						C.setCirkelBoundsY(Cirkel.getBounds().y + 5);*/
 						System.out.println("BottenLeftRightDown");                                                                                                                                                        
 						move = "LeftRightUp";
 						
@@ -192,9 +183,7 @@ public class View {
 					}
 					//Vänster upp till höger ner
 					else if((Cirkel.getY()) == 0 && move.equals("LeftRightUp")) {
-					
-						/*C.setCirkelBounds(Cirkel.getBounds().x - 10);
-						C.setCirkelBoundsY(Cirkel.getBounds().y - 5);*/
+
 	   					System.out.println("TopLeftRightUp");                                                                                                                                                        
 						move = "LeftRightDown";
 						
@@ -210,10 +199,6 @@ public class View {
 					Cirkel.setBounds(C.getCirkelBounds(), C.getCirkelBoundsY(), 25, 25);
 				}
 				
-			
-			
-		}, 0, 100);
-		
-
+		}, 0, 100 );
 	}
 }
