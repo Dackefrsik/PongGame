@@ -28,8 +28,13 @@ public class Model {
 	}
 	
 	public void setBoundsY2(int Y) {
-		
-		boundsY2 += Y;
+		if(Current2 == "Up") {
+	   		boundsY2 += Y;   
+		}
+		else {
+			boundsY2 -= Y;
+		}
+
 	}
 	
 	public String getCurrent1() {
@@ -38,5 +43,13 @@ public class Model {
 	
 	public void setCurrent1(String current) {
 		Current1 = current;
+	}
+	
+	public String getCurrent2() {
+		return Current2;
+	}
+	
+	public void setCurrent2(String Current) {
+		Current2 = Current;
 	}
 }

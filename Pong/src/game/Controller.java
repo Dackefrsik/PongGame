@@ -37,4 +37,12 @@ public class Controller {
 	public void setCurrent1(String current) {
 		m.setCurrent1(current);
 	}
+	
+	public String getCurrent2() {
+		return m.getCurrent2();
+	}
+	
+	public void setCurrent2(String current) {
+		m.setCurrent2(current);
+	}
 }

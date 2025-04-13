@@ -55,6 +55,14 @@ public class View {
 					C.setCurrent1("Down");
 					MovePlayer();
 				}
+				else if(keyCode == KeyEvent.VK_UP) {
+					C.setCurrent2("Up");
+					MovePlayer();
+				}
+				else if(keyCode == KeyEvent.VK_DOWN) {
+					C.setCurrent2("Down");
+					MovePlayer();
+				}
 			}
 		});
 		
@@ -65,15 +73,19 @@ public class View {
 		if(C.getCurrent1() == "Up") {
 			System.out.println("up");
 			C.setBounds1Y(5);	
-
-			
 			Player1.setBounds(0, C.getPlayer1Y(), 15, 50);
 		}
 		else if(C.getCurrent1() == "Down") {
 			C.setBounds1Y(5);
 			Player1.setBounds(0, C.getPlayer1Y(), 15, 50);
-
-			
+		}
+		else if(C.getCurrent2() == "Up") {
+			C.setBounds2Y(5);
+			Player2.setBounds(271, C.getPlayer2Y(), 15, 50);
+		}
+		else if(C.getCurrent2() == "Down") {
+			C.setBounds2Y(5);
+			Player2.setBounds(271, C.getPlayer2Y(), 15, 50);
 		}
 		
 		P.repaint();
